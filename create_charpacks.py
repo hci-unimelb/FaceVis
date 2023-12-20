@@ -14,10 +14,26 @@ def list_files_in_directory(directory):
     sorted_files = sorted(files)
     return sorted_files
 
+def remove_folder(folder_path):
+    try:
+        shutil.rmtree(folder_path)
+        print(f"Folder '{folder_path}' has been removed.")
+    except FileNotFoundError:
+        print(f"Folder '{folder_path}' not found.")
+    except Exception as e:
+        print(f"An error occurred: {e}")
 
+def remove_file(file_path):
+    try:
+        if os.path.exists(file_path):
+            os.remove(file_path)
+            print(f"File '{file_path}' has been removed.")
+        else:
+            print(f"File '{file_path}' does not exist.")
+    except Exception as e:
+        print(f"An error occurred: {e}")
 
 def create_new_character_copy(source_folder,new_folder):
-
     # Copy the entire folder and its contents
     shutil.copytree(source_folder, new_folder)
 
@@ -36,17 +52,13 @@ def move_and_rename_image(image_path, new_folder_name, new_image_name):
     # Form the new path for the image in the new folder with the new name
     new_path = os.path.join(new_folder_name, new_image_name)
 
-    print(new_folder_name[-12:])
-    #extra_cp =  os.path.join( "./models/adult/textures/"+texture_type+"/", new_folder_name[-12:])
-    #shutil.copy(image_path,extra_cp)
     # Move and rename the image
     shutil.copy(image_path, new_path)
 
 
-
+## Updates the character profile and points to the new texture
 def update_json(jsonfile, new_texture_folder,new_json_filename):
-
-        # Read the JSON file
+    # Read the JSON file
     with open(jsonfile, 'r') as file:
         data = json.load(file)
  
@@ -64,9 +76,15 @@ def update_json(jsonfile, new_texture_folder,new_json_filename):
 
     print(f"Updated JSON data saved to '{new_json_filename}'")
 
-
+### Clean previous build
+remove_folder("models")
+remove_file(char_mane+".charpack")
+            
+### Copy data to create a new character pack into the models folder based on the models src
 create_new_character_copy("models_src", "models")
 
+
+# for each png image in the plot_src folder, created a new character profile linking to that png as a texture
 counter =1
 files_in_directory = list_files_in_directory(texture_sources)
 for file in files_in_directory:
@@ -77,9 +95,7 @@ for file in files_in_directory:
     counter+=1
 
 
-#os.remove('models/adult/profiles/characters/Victor.json')
-
-
+### zip all the characters into a charpack
 zf = zipfile.ZipFile(char_mane+".charpack", "w")
 for dirname, subdirs, files in os.walk("models"):
     zf.write(dirname)
