@@ -11,7 +11,8 @@ texture_name = "boxplot"
 
 def list_files_in_directory(directory):
     files = os.listdir(directory)
-    return files
+    sorted_files = sorted(files)
+    return sorted_files
 
 
 
