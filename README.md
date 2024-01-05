@@ -33,7 +33,7 @@ This script creates character packs for Furhat.
 
 ### `play_faces.py`
 
-This script demonstrates how to play faces on Furhat.
+This script demonstrates how to play faces, aka change the face after a some time (defined as a paramrter) on Furhat to create animations
 
 - **Global Variables and Paths**:
   - IP address (`10.100.237.184`) or `localhost` for the Furhat robot or SDK.
