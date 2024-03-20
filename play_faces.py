@@ -1,5 +1,5 @@
 from furhat_remote_api import FurhatRemoteAPI
-import time
+from time import sleep
 
 # Create an instance of the FurhatRemoteAPI class, providing the address of the robot or the SDK running the virtual robot
 furhat = FurhatRemoteAPI("10.100.237.184")
@@ -23,7 +23,7 @@ furhat.gesture(name="BrowRaise")
 
 for i in range(1,11,1):
     furhat.set_face(mask="adult",character="Amauri/Amauri"+str(i))
-    time.sleep(0.5)
+    sleep(0.5)
 
 # Set the voice of the robot
 furhat.set_voice(name='Brian')

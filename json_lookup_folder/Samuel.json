@@ -1,0 +1,306 @@
+{
+    "Parameters": [
+        {
+            "LONGNAME": "Eyebrow tilt",
+            "CATEGORY": "Eyebrows",
+            "IDX": 1,
+            "NAME": "EyebrowTilt",
+            "TYPE": "bm",
+            "MIN": -1.0,
+            "MAX": 1.0,
+            "DEF": 0.0,
+            "VAL": 0.0
+        },
+        {
+            "LONGNAME": "Eyebrow distance",
+            "CATEGORY": "Eyebrows",
+            "IDX": 2,
+            "NAME": "EyebrowDistance",
+            "TYPE": "bm",
+            "MIN": -1.0,
+            "MAX": 1.0,
+            "DEF": 0.0,
+            "VAL": 0.0
+        },
+        {
+            "LONGNAME": "Cheekbones height",
+            "CATEGORY": "Face",
+            "IDX": 3,
+            "NAME": "CheekbonesHeight",
+            "TYPE": "bm",
+            "MIN": -1.0,
+            "MAX": 1.0,
+            "DEF": 0.0,
+            "VAL": 0.0
+        },
+        {
+            "LONGNAME": "Cheekbones intensity",
+            "CATEGORY": "Face",
+            "IDX": 4,
+            "NAME": "CheekbonesIntensity",
+            "TYPE": "bm",
+            "MIN": -1.0,
+            "MAX": 1.0,
+            "DEF": 0.0,
+            "VAL": 0.0
+        },
+        {
+            "LONGNAME": "Eye distance",
+            "CATEGORY": "Eyes",
+            "IDX": 5,
+            "NAME": "EyeDistance",
+            "TYPE": "bm",
+            "MIN": -1.0,
+            "MAX": 1.0,
+            "DEF": 0.0,
+            "VAL": 0.0
+        },
+        {
+            "LONGNAME": "Eye size",
+            "CATEGORY": "Eyes",
+            "IDX": 6,
+            "NAME": "EyeSize",
+            "TYPE": "bm",
+            "MIN": -1.0,
+            "MAX": 1.0,
+            "DEF": 0.0,
+            "VAL": 0.0
+        },
+        {
+            "LONGNAME": "Eye height",
+            "CATEGORY": "Eyes",
+            "IDX": 7,
+            "NAME": "EyeHeight",
+            "TYPE": "bm",
+            "MIN": -1.0,
+            "MAX": 1.0,
+            "DEF": 0.0,
+            "VAL": 0.0
+        },
+        {
+            "LONGNAME": "Cheekbones width",
+            "CATEGORY": "Face",
+            "IDX": 8,
+            "NAME": "CheekbonesWidth",
+            "TYPE": "bm",
+            "MIN": -1.0,
+            "MAX": 1.0,
+            "DEF": 0.0,
+            "VAL": 0.0
+        },
+        {
+            "LONGNAME": "Nose size/nostril width",
+            "CATEGORY": "Face",
+            "IDX": 9,
+            "NAME": "Nose size/nostril width",
+            "TYPE": "bm",
+            "MIN": -1.0,
+            "MAX": 1.0,
+            "DEF": 0.0,
+            "VAL": 0.0
+        },
+        {
+            "LONGNAME": "Nose height",
+            "CATEGORY": "Face",
+            "IDX": 10,
+            "NAME": "NoseHeight",
+            "TYPE": "bm",
+            "MIN": -1.0,
+            "MAX": 1.0,
+            "DEF": 0.0,
+            "VAL": 0.0
+        },
+        {
+            "LONGNAME": "Mouth size",
+            "CATEGORY": "Mouth",
+            "IDX": 11,
+            "NAME": "MouthSize",
+            "TYPE": "bm",
+            "MIN": -1.0,
+            "MAX": 1.0,
+            "DEF": 0.0,
+            "VAL": 0.0
+        },
+        {
+            "LONGNAME": "Mouth width",
+            "CATEGORY": "Mouth",
+            "IDX": 12,
+            "NAME": "MouthWidth",
+            "TYPE": "bm",
+            "MIN": -1.0,
+            "MAX": 1.0,
+            "DEF": 0.0,
+            "VAL": 0.0
+        },
+        {
+            "LONGNAME": "Chin width",
+            "CATEGORY": "Mouth",
+            "IDX": 13,
+            "NAME": "ChinWidth",
+            "TYPE": "bm",
+            "MIN": -1.0,
+            "MAX": 1.0,
+            "DEF": 0.0,
+            "VAL": 0.0
+        },
+        {
+            "LONGNAME": "Chin height",
+            "CATEGORY": "Chin",
+            "IDX": 14,
+            "NAME": "ChinHeight",
+            "TYPE": "bm",
+            "MIN": -1.0,
+            "MAX": 1.0,
+            "DEF": 0.0,
+            "VAL": 0.0
+        },
+        {
+            "LONGNAME": "Eyes tilt",
+            "CATEGORY": "Eyes",
+            "IDX": 15,
+            "NAME": "EyesTilt",
+            "TYPE": "bm",
+            "MIN": -1.0,
+            "MAX": 1.0,
+            "DEF": 0.0,
+            "VAL": 0.0
+        },
+        {
+            "LONGNAME": "Mouth height",
+            "CATEGORY": "Mouth",
+            "IDX": 16,
+            "NAME": "MouthHeight",
+            "TYPE": "bm",
+            "MIN": -1.0,
+            "MAX": 1.0,
+            "DEF": 0.0,
+            "VAL": 0.0
+        },
+        {
+            "LONGNAME": "Eyebrow size",
+            "CATEGORY": "Eyebrows",
+            "IDX": 17,
+            "NAME": "EyebrowSize",
+            "TYPE": "bm",
+            "MIN": -1.0,
+            "MAX": 1.0,
+            "DEF": 0.0,
+            "VAL": 0.0
+        },
+        {
+            "LONGNAME": "Eyebrow height",
+            "CATEGORY": "Eyebrows",
+            "IDX": 18,
+            "NAME": "EyebrowHeight",
+            "TYPE": "bm",
+            "MIN": -1.0,
+            "MAX": 1.0,
+            "DEF": 0.0,
+            "VAL": 0.0
+        },
+        {
+            "LONGNAME": "Eye Roundness",
+            "CATEGORY": "Eyes",
+            "IDX": 19,
+            "NAME": "EyeRoundness",
+            "TYPE": "bm",
+            "MIN": -1.0,
+            "MAX": 1.0,
+            "DEF": 0.0,
+            "VAL": 0.0
+        },
+        {
+            "LONGNAME": "Bottom Lip Thickness",
+            "CATEGORY": "Mouth",
+            "IDX": 20,
+            "NAME": "BottomLipThickness",
+            "TYPE": "bm",
+            "MIN": -1.0,
+            "MAX": 1.0,
+            "DEF": 0.0,
+            "VAL": 0.0
+        },
+        {
+            "LONGNAME": "Top Lip Thickness",
+            "CATEGORY": "Mouth",
+            "IDX": 21,
+            "NAME": "TopLipThickness",
+            "TYPE": "bm",
+            "MIN": -1.0,
+            "MAX": 1.0,
+            "DEF": 0.0,
+            "VAL": 0.0
+        },
+        {
+            "LONGNAME": "Skin Texture",
+            "CATEGORY": "Textures",
+            "IDX": 22,
+            "NAME": "skins",
+            "TYPE": "tm",
+            "MIN": 0.0,
+            "MAX": 10.0,
+            "DEF": 0.0,
+            "VAL": "ted"
+        },
+        {
+            "LONGNAME": "Eye Texture",
+            "CATEGORY": "Textures",
+            "IDX": 23,
+            "NAME": "eyes",
+            "TYPE": "tm",
+            "MIN": 0.0,
+            "MAX": 5.0,
+            "DEF": 0.0,
+            "VAL": "dark-brown"
+        },
+        {
+            "LONGNAME": "Teeth Texture",
+            "CATEGORY": "Textures",
+            "IDX": 24,
+            "NAME": "teeth",
+            "TYPE": "tm",
+            "MIN": 0.0,
+            "MAX": 1.0,
+            "DEF": 0.0,
+            "VAL": "realistic"
+        }
+    ],
+    "TextureController": {
+        "FaceSkinColor": "#FFFFFFFF",
+        "TextureSets": {
+            "skins": "ted",
+            "eyes": "dark-brown",
+            "teeth": "realistic",
+            "eyelashes": "default"
+        },
+        "Overlays": [
+            {
+                "CAT": "eyebrows",
+                "VAL": "default",
+                "COLOR": "#FFFFFF00"
+            },
+            {
+                "CAT": "skin-blush",
+                "VAL": "default",
+                "COLOR": "#FFFFFF00"
+            },
+            {
+                "CAT": "facial-hair",
+                "VAL": "default",
+                "COLOR": "#FFFFFF00"
+            },
+            {
+                "CAT": "lips",
+                "VAL": "default",
+                "COLOR": "#C6796F00"
+            },
+            {
+                "CAT": "tattoos",
+                "VAL": "default",
+                "COLOR": "#FFFFFF00"
+            }
+        ]
+    },
+    "MaskID": "adult",
+    "RigID": "adult"
+}
