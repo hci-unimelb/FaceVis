@@ -1,6 +1,6 @@
 # Furhat Remote API Python Package
 
-[![Example Image](./ressources/face.png)](./resosurces/face.png)
+[![Example Image](./resources/face.png)](./resosurces/face.png)
 
 
 This package serves as a guide for utilizing the Furhat robot's Python application. It facilitates the creation of facial expressions using new `.png` assets and textures, compiling them into `.charpack` character pack format. Additionally, it includes scripts demonstrating how to play and modify faces programmatically using Python.
