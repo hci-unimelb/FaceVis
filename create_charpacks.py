@@ -81,6 +81,9 @@ def update_json(jsonfile, new_texture_folder, new_json_filename):
     with open(jsonfile, 'r') as file:
         data = json.load(file)
     
+    #############################################################################################
+    ############### NOTE: Below are multiple ways to add overlays to JSON strings ###############
+    
     # Modify the value of "facial-hair" overlay
     # new_facial_hair_value = "new_facial_hair_value"
     
@@ -93,10 +96,10 @@ def update_json(jsonfile, new_texture_folder, new_json_filename):
     #         overlay["VAL"] = new_texture_folder
     #         break  # Assuming there's only one "facial-hair" overlay
     
-    for overlay in data["TextureController"]["Overlays"]:
-        if overlay["CAT"] == "facial-hair":
-            overlay["VAL"] = "29_adult_male_middle_east_realistic"
-            break  # Assuming there's only one "facial-hair" overlay
+    # for overlay in data["TextureController"]["Overlays"]:
+    #     if overlay["CAT"] == "facial-hair":
+    #         overlay["VAL"] = "29_adult_male_middle_east_realistic"
+    #         break  # Assuming there's only one "facial-hair" overlay
         
     overlay_list = data["TextureController"]["Overlays"]
     facial_hair_dict = {
@@ -106,7 +109,7 @@ def update_json(jsonfile, new_texture_folder, new_json_filename):
     }
     overlay_list.append(facial_hair_dict)
 
-
+    ##########################################
     # Save the updated JSON data to a new file
     with open(new_json_filename, 'w') as outfile:
         json.dump(data, outfile, separators=(',', ':'))
@@ -131,7 +134,7 @@ files_in_directory = list_files_in_directory(TEXTURE_SRC)
 for file in files_in_directory:
     print(file)
     numbered_txtr_name = TEXTURE_NAME+""+str(counter)
-    # move_and_rename_image(TEXTURE_SRC+"/"+file, "./models/adult/textures/"+TEXTURE_TYPE+"/"+TEXTURE_NAME, new_image_name="albedo.png")
+    move_and_rename_image(TEXTURE_SRC+"/"+file, "./models/adult/textures/"+TEXTURE_TYPE+"/"+numbered_txtr_name, new_image_name="albedo.png")
     # update_json('models_src/adult/profiles/characters/Victor.json',TEXTURE_NAME, 'models/adult/profiles/characters/'+NEW_CHAR_NAME+str(counter)+".json")
     update_json(JSON_SRC+'/'+BASE_CHAR_NAME+'.json', numbered_txtr_name, 'models/adult/profiles/characters/'+NEW_CHAR_NAME+str(counter)+".json")
     counter+=1
