@@ -6,14 +6,14 @@ from zipfile import ZipFile
 
 
 ################ GLOBAL VARIABLES ################
-BASE_CHAR_NAME = "Leaf"
-NEW_CHAR_NAME = "skins"
+BASE_CHAR_NAME = "Isabel"
+NEW_CHAR_NAME = "Eyes"
 
 JSON_SRC = "json_src"
 TEXTURE_SRC = "plot_src/"+NEW_CHAR_NAME
 
-TEXTURE_TYPE = "skins"
-TEXTURE_NAME = "faceLeaf.gif"
+TEXTURE_TYPE = "facial-hair"
+TEXTURE_NAME = "eyes"
 
 # OVERLAY_NAMES = ['scars', 'skin-texture', 'eyebrows', 'eye-shadow', 'eye-liner', 'eye-effects',
 #                  'freckles', 'spots', 'skin-blush', 'nose', 'cyborg-top', 'cyborg-bottom', 
